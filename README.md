@@ -10,7 +10,8 @@ and a ssh key pair to access it.
 You are going to heed terraform software installed on your pc. It could be done via downloading
 source code and compiling it or you may want to obtain binary prebuilt package for your distribution.
 Download link is https://www.terraform.io/downloads.html.
-Also a copy of aws and git software have to be installed. For debian based distributions of linux
+Also a copy of aws and git software have to be installed.
+We will figure it out for debian based distributions of linux.
 ### Installing
 To install terrafom binary package you might want to download it
 - cd ~;mkdir terraform;cd terraform
