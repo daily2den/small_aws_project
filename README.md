@@ -42,7 +42,9 @@ this ssh key pair will allow you to login into your EC2 intance once it is up an
 - cd small_aws_project
 	To initialuze Terraform type
 - ~/terraform/terraform init
-	To check if everything is okay and ready for ec2 instance deploy type
+
+## Deployment
+	To check if everything is okay and ready for the ec2 instance deployment type
 - ~/terraform/terraform plan
 	To deploy it type
 - ~/terraform/terraform apply
