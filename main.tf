@@ -22,14 +22,14 @@ resource "aws_security_group" "allow_in_out" {
 	name = "allow_in_out"
 
 	ingress {
-		from_port = 0
+		from_port = 22
 		to_port = 22
 		protocol = "tcp"
 		cidr_blocks = [ "76.169.181.157/32", "178.150.253.6/32" ]
 	}
 
 	ingress {
-		from_port = 0
+		from_port = 80
 		to_port = 80
 		protocol = "tcp"
 		cidr_blocks = [ "0.0.0.0/0" ]
