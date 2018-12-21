@@ -15,9 +15,9 @@ We will figure it out for debian based distributions of linux.
 ### Installing
 	To install terrafom binary package you might want to download it
 - cd ~;mkdir terraform;cd terraform
-- wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
-and unpack it
+- wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip and unpack it
 - unzip terraform_0.11.11_linux_amd64.zip
+
 To install git and aws clients you might want to type those command in your's pc's console:
 - sudo apt-get update
 - sudo apt-get install awscli -y
@@ -36,10 +36,12 @@ and fill all the necessary fields
 and then import it into AWS key management system
 - aws ec2 import-key-pair --key-name "awskey" --public-key-material file://~/.ssh/awskey.pub
 this ssh key pair will allow you to login into your EC2 intance once it is up and running
+
 	To clone this git repository to your local drive type
 - cd ~
 - git clone https://github.com/daily2den/small_aws_project/
 - cd small_aws_project
+
 	To initialuze Terraform type
 - ~/terraform/terraform init
 
