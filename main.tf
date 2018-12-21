@@ -1,7 +1,7 @@
 provider "aws" {
 	region = "us-west-2"
-	access_key = "AKIAJXIBOGLDC3MSOYRA"
-	secret_key = "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"
+	access_key = "AKIAI76OTTJZDJQK6SEA"
+	secret_key = "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"
 }
 
 resource "aws_instance" "simpleinstance" {
@@ -11,7 +11,7 @@ resource "aws_instance" "simpleinstance" {
 	user_data = "${file("userdata.sh")}"
 	key_name = "${var.key_name}"
 
-	security_groups = [ "allow_ssh", "allow_www" ]
+	security_groups = [ "allow_in_out" ]
 
 	tags {
 		Name = "PlayQ 2019!"
