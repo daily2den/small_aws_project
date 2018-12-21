@@ -57,6 +57,7 @@ To check if everything is okay and ready for the ec2 instance deployment type
 
 To deploy it enter
 - ~/terraform/terraform apply
+
 At that time you could access your newly deployed EC2 instance via ssh client
 - ssh -i "~/.ssh/awskey.pem" ubuntu@ec2-54-218-90-15.us-west-2.compute.amazonaws.com
 
