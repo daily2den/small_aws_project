@@ -23,4 +23,16 @@ To install git and aws clients you might want to type those command in your's pc
 - sudo apt-get install awscli -y
 - sudo apt-get install git -y
 ### Configuring
-
+Assuming you have got your Amazon AWS account created already. If you dont have one, you will be
+required to create free account. Link is https://aws.amazon.com/
+After you have set up your main aws account, it's highly advisible to create additional accounts.
+These are called IAM accounts, it will help to secure your main account.
+To configure aws client type
+- aws configure
+and fill all the necessary fields
+Create ssh key pair by typing
+- ssh-keygen -t rsa -C "awskey" -f ~/.ssh/awskey
+- mv -f ~/.ssh/awskey ~/.ssh/awskey.pem
+and then import it into AWS key management system
+- aws ec2 import-key-pair --key-name "awskey" --public-key-material file://~/.ssh/awskey.pub
+this ssh key pair will allow you to login into your EC2 intance once it is up and running
